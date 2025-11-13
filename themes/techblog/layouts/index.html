@@ -1,0 +1,29 @@
+{{ define "main" }}
+<h1 class="articles-heading">Some interesting things I did</h1>
+
+<div class="posts-list">
+  {{ range .Site.RegularPages.ByDate.Reverse }}
+  <article class="post-preview">
+    <h2 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    
+    {{ partial "post-meta.html" . }}
+    
+    {{ with .Description }}
+    <p class="post-excerpt">{{ . }}</p>
+    {{ else }}
+    <p class="post-excerpt">{{ .Summary }}</p>
+    {{ end }}
+    
+    {{ if .Params.tags }}
+    <div class="post-tags">
+      {{ range .Params.tags }}
+      <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}

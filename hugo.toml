@@ -1,3 +1,26 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://Gauravpadam.github.io/techblog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Gaurav's technical blog"
+theme = 'techblog'
+
+[params]
+  display_title = "// TODO: Title"
+  display_description = "// Will fix later. last commited 6 years ago by gaurav padam"
+  authors_name = "Gaurav Padam"
+  authors_description = "I read code, write code and make random arrow diagrams to explain how my applications are supposed to work. I do some math as well."
+  authors_linkedin = "https://www.linkedin.com/in/gaurav-padam/"
+  description = "Technical blog by Gaurav Padam - Deep dives into software architecture, distributed systems, backend engineering, and cloud infrastructure. Exploring scalable solutions and engineering best practices."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    style = 'dracula'
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'sitemap']
+  section = ['HTML', 'RSS']

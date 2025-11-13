@@ -1,0 +1,16 @@
+{{ if not .Params.hide_author_bio }}
+<div class="author-bio">
+  <div class="author-bio-header">
+    <h3>About the Author</h3>
+  </div>
+  <div class="author-bio-content">
+    <p><strong>{{ .Site.Params.authors_name }}</strong></p>
+    {{ with .Site.Params.authors_description }}
+    <p>{{ . }}</p>
+    {{ end }}
+    {{ with .Site.Params.authors_linkedin }}
+    <p><a href="{{ . }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn →</a></p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

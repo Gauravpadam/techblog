@@ -1,0 +1,10 @@
+{{- $readingTime := div (countwords .Content) 200 -}}
+{{- if lt $readingTime 1 -}}
+  {{- $readingTime = 1 -}}
+{{- end -}}
+
+<div class="post-meta">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  <span class="separator">•</span>
+  <span class="reading-time">{{ $readingTime }} min read</span>
+</div>

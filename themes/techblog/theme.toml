@@ -1,0 +1,12 @@
+name = "TechBlog"
+license = "MIT"
+licenselink = "https://github.com/yourusername/techblog/blob/main/LICENSE"
+description = "A minimalistic, elegant dark theme for technical blogs"
+homepage = "https://github.com/yourusername/techblog"
+tags = ["blog", "minimal", "dark", "technical", "responsive"]
+features = ["blog", "syntax-highlighting", "responsive", "seo"]
+min_version = "0.120.0"
+
+[author]
+  name = "Gaurav Padam"
+  homepage = "https://Gauravpadam.github.io"
