@@ -1,5 +1,5 @@
 ---
-title: "I made a cat, an orange cat"
+title: "Cat: Building a Libre home assistant using AI agents"
 date: 2026-01-11
 draft: false
 tags: ["ai", "llm", "voice-assistant", "langgraph", "whisper", "ollama", "privacy", "local-first"]
